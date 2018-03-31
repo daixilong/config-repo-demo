@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: file://${user.home}/config-repo-demo
+          search-paths: config-repo
+          force-pull: true	
+#          username: 
+#          password: 
+
+server:
+ port: 1201
